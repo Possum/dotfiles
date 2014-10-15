@@ -66,4 +66,7 @@ augroup END
     set list lcs=trail:\ ,tab:»\ ,extends:>,precedes:<
 " }}}
 
+" Disable netrwhist generation
+let g:netrw_dirhistmax = 0
+
 " vim: sw=4 ts=4 sts=4 tw=80 ai et fdm=marker
