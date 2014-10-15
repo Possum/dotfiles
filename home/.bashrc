@@ -60,3 +60,5 @@ export PS1="\[\033[01;33m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
 if [ -e $HOME/perl5/lib/perl5 ] && perl -I$HOME/perl5/lib/perl5 -Mlocal::lib -e1; then
     eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 fi
+
+[ -f "$HOME/.homesick/repos/homeshick/homeshick.sh" ] && source "$HOME/.homesick/repos/homeshick/homeshick.sh"
