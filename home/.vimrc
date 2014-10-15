@@ -51,7 +51,7 @@ augroup templates
   " read in template files
   autocmd BufNewFile *.* silent! execute '0r $HOME/.vim/skel/skel.'.expand("<afile>:e")
 
-  " parse special text in the templates after the read
+  " parse special text in the templates after the read - this requires vim 7+
   autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge
 augroup END
 " }}}
