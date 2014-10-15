@@ -51,7 +51,8 @@ fi
 # Use local bin path
 export PATH="$HOME/bin:$PATH"
 
-export PS1="\[\033[01;33m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
+export PS1="\u@\h$(tput setaf 4) \w \$$(tput sgr0) "
+[ -f $HOME/.bash_color ] &&  PS1="$(. .bash_color)$PS1"
 
 # This seems to only work in screen?
 [ "$TERM" == "screen" ] && export PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\ek%s\e\\" $(basename $(pwd))'
