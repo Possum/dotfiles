@@ -31,6 +31,10 @@ noremap L S
 noremap S L
 " }}}
 
+" Perl syntax
+let perl_include_pod = 1
+let perl_extended_vars = 1
+
 au BufNew,BufRead *.{pl,cgi,pm,t} setlocal equalprg=perltidy\ -pbp\ -l\ 80
 
 au BufNew,BufRead *.{tt,ttml,html,ttm,htm} set ft=tt2html
