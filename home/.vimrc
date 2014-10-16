@@ -8,6 +8,8 @@ filetype plugin indent on
 set incsearch
 set hls
 
+set tabpagemax=100
+
 set t_Co=256
 colorscheme desert
 
