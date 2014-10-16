@@ -1,0 +1,27 @@
+$include /etc/inputrc
+
+set editing-mode vi
+
+"\C-l": clear-screen
+
+$if mode=vi
+
+    set keymap vi-move
+
+    "h": backward-char
+    "t": next-history
+    "n": previous-history
+    "s": forward-char
+    "k": vi-search-again
+
+    set keymap vi-command
+
+    Control-l: clear-screen
+
+    set keymap vi-insert
+
+    "\e[5C": shell-forward-word
+    "\e[5D": shell-backward-word
+
+    Control-l: clear-screen
+$endif
