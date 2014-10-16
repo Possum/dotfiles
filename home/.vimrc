@@ -77,6 +77,9 @@ augroup END
     set list lcs=trail:\ ,tab:»\ ,extends:>,precedes:<
 " }}}
 
+" Fix bash highlighting...
+let g:is_posix = 1
+
 " Disable netrwhist generation
 let g:netrw_dirhistmax = 0
 
