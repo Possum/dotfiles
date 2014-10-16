@@ -44,6 +44,7 @@ let perl_fold=1
 " LaTeX-y stuf
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
+au BufNew,BufRead *.{la,}tex set makeprg=pdflatex\ -interaction=nonstopmode\ %
 
 " Skeletons {{{
 augroup templates
