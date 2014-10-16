@@ -7,7 +7,7 @@ filetype plugin indent on
 set t_Co=256
 colorscheme desert
 
-set sw=4 ts=4 sts=4 tw=80 ai et
+set sw=4 ts=4 sts=4 tw=80 ai et aw
 
 " Work around smartindent unindenting #
 inoremap # X<BS>#
