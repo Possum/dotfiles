@@ -4,6 +4,10 @@ set modeline
 filetype on
 filetype plugin indent on
 
+" Make searching nicer
+set incsearch
+set hls
+
 set t_Co=256
 colorscheme desert
 
