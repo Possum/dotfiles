@@ -52,13 +52,12 @@ fi
 export PATH="$HOME/bin:$PATH"
 
 export PS1="\u@\h\[$(tput setaf 4)\] \w \$\[$(tput sgr0)\] "
-[ -f $HOME/.bash_color ] &&  PS1="\[$(. .bash_color)\]$PS1"
+[ -f $HOME/.bash_color ] &&  PS1="\[$(. $HOME/.bash_color)\]$PS1"
 
 # This seems to only work in screen?
-[ "$TERM" == "screen" ] && export PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\ek%s\e\\" $(basename $(pwd))'
-
+[ "$TERM" == "screen" ] && export PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\ek%s\e\\" $(basename "$(pwd)")'
 # For perl local::lib
-if [ -e $HOME/perl5/lib/perl5 ] && perl -I$HOME/perl5/lib/perl5 -Mlocal::lib -e1; then
+if [ -e $HOME/perl5/lib/perl5 ] && perl -I$HOME/perl5/lib/perl5 -Mlocal::lib -e1 2>/dev/null; then
     eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 fi
 

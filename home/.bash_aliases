@@ -9,3 +9,6 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# Adjusts 440Hz to 432Hz
+alias mplayer432='mplayer -speed 0.98181818 -af scaletempo=speed=pitch'
