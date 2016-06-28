@@ -63,6 +63,11 @@ fi
 
 [ -f "$HOME/.homesick/repos/homeshick/homeshick.sh" ] && source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
+# keychain
+if which keychain &>/dev/null; then
+    eval `keychain --eval`
+fi
+
 # local modifications (i.e., on a per-host basis)
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
