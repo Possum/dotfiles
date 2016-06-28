@@ -73,8 +73,9 @@ augroup END
 " Hilight literal tabs and trailing whitespace {{{
     " hi! SpecialKey term=bold cterm=bold ctermfg=4 gui=bold guifg=LightBlue guibg=grey30
     hi! link SpecialKey ErrorMsg
-    "set list listchars=tab:»·,trail:·,extends:>,precedes:<
-    set list lcs=trail:\ ,tab:»\ ,extends:>,precedes:<
+    " set list listchars=tab:»·,trail:·,extends:>,precedes:<
+    " set list lcs=trail:\ ,tab:»\ ,extends:>,precedes:<
+    set list lcs=trail:\ ,tab:>\ ,extends:>,precedes:<
 " }}}
 
 " Fix bash highlighting...
