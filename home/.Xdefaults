@@ -1,0 +1,170 @@
+Xcursor.theme: default
+
+irssi*urgentOnBell:true
+
+vnc*fullScreen: true
+vnc*grabKeyboard: true
+
+Rxvt*background:    #000000
+
+!! For Real Transparency
+!Rxvt*background:   [80]#000000
+!Rxvt*depth:        32
+
+!! For pseudo transparency
+Rxvt*transparent: true
+
+Rxvt*foreground:   #00ff00
+!Rxvt*font: -xos4-terminus-medium-r-normal--14-140-72-72-c-80-*-u
+!Rxvt*font: xft:Terminus:size=10:antialias=true:hinting=true
+Rxvt*font: xft:terminus:pixelsize=12:antialias=true:hinting=true
+Rxvt*scrollBar: false
+Rxvt*borderLess: false
+Rxvt*cursorBlink: true
+Rxvt*fading: 40
+!Rxvt*tintColor: black
+Rxvt*shading: 50
+Rxvt*visualBell: false
+
+!! For mark-yank-urls plugin
+!URxvt.keysym.M-u: perl:mark-yank-urls:activate_mark_mode
+!URxvt.underlineURLs: true
+!URxvt.perl-lib: /home/possum/.urxvt
+!URxvt.perl-ext: selection,mark-yank-urls
+!URxvt.urlLauncher: iceweasel
+!URxvt.print-pipe: cat > /dev/null
+
+!! Font
+!URxvt*font: xft:Terminus:pixelsize=14:antialias=true:hinting=true,xft:Kochi Gothic:antialias=true,xft:Baekmuk Gulim
+URxvt*font: xft:Gohufont:pixelsize=14:antialias=true:hinting=true,xft:IPAGothic:pixelsize=14:antialias=true,xft:Baekmuk Gulim
+
+! Colorscheme
+! Foreground Blue
+*color12:  #74b8ef
+
+!! ! derp
+
+!! ! Black
+!! *color0:   #111111
+!! *color8:   #666666
+!! 
+!! ! Red
+!! *color1:   rgb:d3/62/65
+!! *color9:   rgb:ef/81/71
+!! 
+!! ! Green
+!! *color2:   #aece91
+!! *color10:  #cfefb3
+!! 
+!! ! Yellow
+!! *color3:   rgb:e7/e1/8c
+!! *color11:  rgb:ff/f7/96
+!! 
+!! ! Blue
+!! *color4:   #5297cf
+!! *color12:  #74b8ef
+!! 
+!! ! Magenta
+!! *color5:   #963c59
+!! *color13:  #b85e7b
+!! 
+!! ! Cyan
+!! *color6:   #5E7175
+!! *color14:  #A3BABF
+!! 
+!! ! White
+!! *color7:   #bebebe
+!! *color15:  #ffffff
+
+!! ! tlh
+!! 
+!! *background:    #101010
+!! *foreground:    #66FF66
+!! 
+!! !black
+!! *color0:        #1c1c1c
+!! *color8:        #4d4d4d
+!! !red
+!! *color1:        #D81860
+!! *color9:        #F00060
+!! !green
+!! *color2:        #60FF60
+!! *color10:       #70FF70
+!! !yellow
+!! *color3:        #f9fd75
+!! *color11:       #f9fd80
+!! !blue
+!! *color4:        #4695c8
+!! *color12:       #5a9dc8
+!! !magenta
+!! *color5:        #a78edb
+!! *color13:       #b29fdb
+!! !cyan
+!! *color6:        #43afce
+!! *color14:       #69b8ce
+!! !white
+!! *color7:        #f3ebe2
+!! *color15:       #eeeeee
+
+!! ! belge
+!! !black
+!! *color0:     #252525
+!! *color8:     #454545
+!! !red
+!! *color1:     #EF6769
+!! *color9:     #FC7CA5
+!! !green
+!! *color2:     #A6E22E
+!! *color10:    #B6E354
+!! !yellow
+!! *color3:     #FD971F
+!! *color11:    #FD971F
+!! !blue
+!! *color4:     #6495ED
+!! *color12:    #87CEEB
+!! !magenta
+!! *color5:     #DEB887
+!! *color13:    #996600
+!! !cyan
+!! *color6:     #B0C4DE
+!! *color14:    #87CEEB
+!! !white
+!! *color7:     #DBDCDC
+!! *color15:    #FDFDFD
+
+!! ! euphrasia v. 1.0
+!! ! by bohoomil
+!! 
+!! ! Xresources
+!! !URxvt*background:  #000C1A
+!! !URxvt*foreground:  #ACB4BF
+!! !URxvt*cursorColor: #335A80
+!! 
+!! ! fg/bg for Xorg apps
+!! *background:    #CFCFD9
+!! *foreground:    #1C2027
+!! 
+!! ! black
+!! *color0:    #192033
+!! *color8:    #666666
+!! ! red
+!! *color1:    #A62A3E
+!! *color9:    #F04758
+!! ! green
+!! *color2:    #38912B
+!! *color10:   #93C724
+!! ! yellow
+!! *color3:    #B27D12
+!! *color11:   #DDB62B
+!! ! blue
+!! *color4:    #355C9A
+!! *color12:   #45A3E6
+!! ! magenta
+!! *color5:    #7C4F9F
+!! *color13:   #C953EF
+!! ! cyan
+!! *color6:    #258F8F
+!! *color14:   #60C6C8
+!! ! white
+!! *color7:    #77858C
+!! *color15:   #C0C0C0
