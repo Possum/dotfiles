@@ -73,7 +73,7 @@ _LAST_CHECK=`date +%s`
 __reload_bashrc() {
     CHECK_FILES=".bashrc .bashrc.local .bash_aliases"
     for f in $CHECK_FILES; do
-        [ -f $f ] && [ `date +%s -r .bashrc` -ge $_LAST_CHECK ] && . $f
+        [ -f $f ] && [ `date +%s -r $HOME/$f` -ge $_LAST_CHECK ] && . $f
     done
     _LAST_CHECK=`date +%s`
 }
