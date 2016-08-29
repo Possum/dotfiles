@@ -68,6 +68,17 @@ if which keychain &>/dev/null; then
     eval `keychain --eval`
 fi
 
+# autoreload
+_LAST_CHECK=`date +%s`
+__reload_bashrc() {
+    CHECK_FILES=".bashrc .bashrc.local .bash_aliases"
+    for f in $CHECK_FILES; do
+        [ -f $f ] && [ `date +%s -r .bashrc` -ge $_LAST_CHECK ] && . $f
+    done
+    _LAST_CHECK=`date +%s`
+}
+PROMPT_COMMAND="$PROMPT_COMMAND;__reload_bashrc"
+
 # local modifications (i.e., on a per-host basis)
 if [ -f ~/.bashrc.local ]; then
     . ~/.bashrc.local
